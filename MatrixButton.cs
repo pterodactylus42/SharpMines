@@ -1,40 +1,27 @@
+﻿//using System;
 using Gtk;
 
-public class MatrixButton : Button
+namespace SharpMines
 {
-    public int xpos, ypos;
-    public MineField mf;
+    public class MatrixButton : Gtk.Button
+    {
+        public int xpos, ypos;
+        public MineField mf;
 
-    public MatrixButton(string label, int x, int y)
-    {
-        this.xpos = x;
-        this.ypos = y;
-        Button::setLabel(label);
-        return this;
-    }
+        public MatrixButton(string label, int x, int y, MineField mineField) : base(label)
+        {
+            this.xpos = x;
+            this.ypos = y;
+            this.mf = mineField;
+        }
 
-    public void setMinefield(MineField minefield)
-    {
-        this.mf = minefield;
-    }
-
-    public MineField GetMineField()
-    {
-        return this.mf;
-    }
-
-    public void setPosition(int x, int y)
-    {
-        this.xpos = x;
-        this.ypos = y;
-    }
-
-    public int getXPosition()
-    {
-        return this.xpos;
-    }
-    public int getYPosition()
-    {
-        return this.ypos;
+        public int getXPosition()
+        {
+            return this.xpos;
+        }
+        public int getYPosition()
+        {
+            return this.ypos;
+        }
     }
 }

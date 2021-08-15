@@ -1,5 +1,6 @@
 ﻿using System;
 using Gtk;
+using Gdk;
 
 namespace SharpMines
 {
@@ -25,11 +26,13 @@ namespace SharpMines
             Console.WriteLine("x - {0} y - {1} was pressed", b.getXPosition().ToString(), b.getYPosition().ToString());
             if (b.mf.isExplosive(b.getXPosition(), b.getYPosition()))
             {
-                b.Label = "X";
-                Console.WriteLine("you lost ;-(");
                 Gdk.Color col = new Gdk.Color();
                 Gdk.Color.Parse("red", ref col);
-                b.ModifyBg(StateType.Normal, col);
+                b.ModifyText(StateType.Normal, col);
+                b.ModifyFg(StateType.Normal, col);
+                b.ModifyBg(StateType.Normal, new Gdk.Color(255, 0, 0));
+                b.Label = "X";
+                Console.WriteLine("you lost ;-(");
                 MessageDialog loserDialog = new MessageDialog(b.mf.GetWindow(),
                                                                 DialogFlags.DestroyWithParent,
                                                                 MessageType.Question,
@@ -97,7 +100,7 @@ namespace SharpMines
                 this.buttons[i] = new MatrixButton[YSIZE];
             }
             Gdk.Color col = new Gdk.Color();
-            Gdk.Color.Parse("white", ref col);
+            Gdk.Color.Parse("red", ref col);
             for (int x = 0; x < XSIZE; x++)
             {
                 for (int y = 0; y < YSIZE; y++)

@@ -1,0 +1,12 @@
+/home/ptero/Projects/SharpMines/bin/Debug/SharpMines.exe
+/home/ptero/Projects/SharpMines/bin/Debug/SharpMines.pdb
+/home/ptero/Projects/SharpMines/obj/x86/Debug/SharpMines.csprojAssemblyReference.cache
+/home/ptero/Projects/SharpMines/obj/x86/Debug/SharpMines.csproj.CoreCompileInputs.cache
+/home/ptero/Projects/SharpMines/obj/x86/Debug/SharpMines.exe
+/home/ptero/Projects/SharpMines/obj/x86/Debug/SharpMines.pdb
+/home/ptero/cSharp/SharpMines/bin/Debug/SharpMines.exe
+/home/ptero/cSharp/SharpMines/bin/Debug/SharpMines.pdb
+/home/ptero/cSharp/SharpMines/obj/x86/Debug/SharpMines.csprojAssemblyReference.cache
+/home/ptero/cSharp/SharpMines/obj/x86/Debug/SharpMines.csproj.CoreCompileInputs.cache
+/home/ptero/cSharp/SharpMines/obj/x86/Debug/SharpMines.exe
+/home/ptero/cSharp/SharpMines/obj/x86/Debug/SharpMines.pdb
